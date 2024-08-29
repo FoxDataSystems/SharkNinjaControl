@@ -1,0 +1,84 @@
+2024-08-28 17:44:54,015 - INFO - Starting stock check
+2024-08-28 17:44:54,016 - INFO - Checking stock for NL Ninja
+2024-08-28 17:44:54,019 - INFO - Processing URLs...
+2024-08-28 17:45:07,112 - INFO - Updated 3 out-of-stock products for NL Ninja
+2024-08-28 17:45:07,141 - INFO - Updated 23 in-stock products for NL Ninja
+2024-08-28 17:45:07,175 - INFO - Price unchanged for ProductID 2. Current: 259.99
+2024-08-28 17:45:07,176 - INFO - Price unchanged for ProductID 21. Current: 163.99
+2024-08-28 17:45:07,177 - INFO - Price unchanged for ProductID 23. Current: 24.99
+2024-08-28 17:45:07,178 - INFO - Price changed for ProductID 1. Old: 167.99, New: 159.99
+2024-08-28 17:45:07,179 - INFO - Price unchanged for ProductID 3. Current: 199.99
+2024-08-28 17:45:07,179 - ERROR - Error in save_prices_to_db: time data '2024-08-07' does not match format '%Y-%m-%d %H:%M:%S'
+2024-08-28 17:45:07,180 - INFO - Saved product status and prices for 26 products for NL Ninja
+2024-08-28 17:45:07,180 - INFO - No URLs were skipped in the end for NL Ninja
+2024-08-28 17:45:07,180 - INFO - Finished checking NL Ninja
+2024-08-28 17:45:07,180 - INFO - -----------------------------------
+2024-08-28 17:45:07,180 - INFO - Checking stock for BE Shark
+2024-08-28 17:45:07,181 - INFO - Processing URLs...
+2024-08-28 17:45:10,291 - ERROR - Error fetching https://sharkclean.be/product/shark-stratos-snoerloze-steelstofzuiger-met-clean-sense-iq-en-powerfins-plus-enkele-accu-iz400eu-zidIZ400EU: HTTPSConnectionPool(host='sharkclean.be', port=443): Read timed out. (read timeout=3)
+2024-08-28 17:45:14,945 - ERROR - Error fetching https://sharkclean.be/product/shark-anti-hair-wrap-snoerloze-steelstofzuiger-met-flexology-model-voor-huisdieren-enkele-accu-iz201eut-zidIZ201EUT: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-08-28 17:45:16,202 - ERROR - Error fetching https://sharkclean.be/product/shark-floordetect-draadloze-steelstofzuiger-bu1120eu-zidBU1120EU: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-08-28 17:45:25,589 - ERROR - Error fetching https://sharkclean.be/product/shark-speedstyle-rapidgloss-finisher-en-haardroger-met-hoge-snelheid-voor-krullen-en-kroeshaar-hd334eu-zidHD334EU: HTTPSConnectionPool(host='sharkclean.be', port=443): Read timed out. (read timeout=3)
+2024-08-28 17:45:29,872 - ERROR - Error fetching https://sharkclean.be/product/shark-kruimeldief-wv270eu-wandvac-2-0-zidWV270EU: HTTPSConnectionPool(host='sharkclean.be', port=443): Read timed out. (read timeout=3)
+2024-08-28 17:45:33,995 - INFO - Rerunning 5 skipped URLs...
+2024-08-28 17:45:41,453 - ERROR - Error fetching https://sharkclean.be/product/shark-kruimeldief-wv270eu-wandvac-2-0-zidWV270EU: HTTPSConnectionPool(host='sharkclean.be', port=443): Read timed out. (read timeout=3)
+2024-08-28 17:45:41,453 - INFO - Re-rerunning 1 skipped URLs...
+2024-08-28 17:45:42,495 - INFO - Updated 3 out-of-stock products for BE Shark
+2024-08-28 17:45:42,515 - INFO - Updated 18 in-stock products for BE Shark
+2024-08-28 17:45:42,537 - INFO - Price unchanged for ProductID 28. Current: 198.99
+2024-08-28 17:45:42,538 - INFO - Price unchanged for ProductID 31. Current: 129.99
+2024-08-28 17:45:42,538 - INFO - Price unchanged for ProductID 32. Current: 249.99
+2024-08-28 17:45:42,539 - INFO - Price unchanged for ProductID 29. Current: 379.99
+2024-08-28 17:45:42,540 - INFO - Price unchanged for ProductID 30. Current: 219.99
+2024-08-28 17:45:42,540 - INFO - Price unchanged for ProductID 48. Current: 175.99
+2024-08-28 17:45:42,541 - INFO - Price unchanged for ProductID 34. Current: 304.99
+2024-08-28 17:45:42,542 - INFO - Price unchanged for ProductID 35. Current: 230.99
+2024-08-28 17:45:42,542 - INFO - Price unchanged for ProductID 36. Current: 349.99
+2024-08-28 17:45:42,543 - INFO - Price unchanged for ProductID 37. Current: 74.99
+2024-08-28 17:45:42,543 - INFO - Price unchanged for ProductID 38. Current: 79.99
+2024-08-28 17:45:42,544 - INFO - Price unchanged for ProductID 39. Current: 179.99
+2024-08-28 17:45:42,545 - INFO - Price unchanged for ProductID 41. Current: 199.99
+2024-08-28 17:45:42,546 - INFO - Price unchanged for ProductID 44. Current: 109.99
+2024-08-28 17:45:42,546 - INFO - Price unchanged for ProductID 45. Current: 99.99
+2024-08-28 17:45:42,547 - INFO - Price unchanged for ProductID 47. Current: 189.99
+2024-08-28 17:45:42,547 - INFO - Price unchanged for ProductID 46. Current: 79.99
+2024-08-28 17:45:42,548 - INFO - Price unchanged for ProductID 27. Current: 322.99
+2024-08-28 17:45:42,549 - INFO - Price unchanged for ProductID 42. Current: 279.99
+2024-08-28 17:45:42,549 - INFO - Price unchanged for ProductID 40. Current: 173.99
+2024-08-28 17:45:42,550 - INFO - Price unchanged for ProductID 43. Current: 129.99
+2024-08-28 17:45:42,550 - INFO - Saved product status and prices for 21 products for BE Shark
+2024-08-28 17:45:42,550 - INFO - No URLs were skipped in the end for BE Shark
+2024-08-28 17:45:42,550 - INFO - Finished checking BE Shark
+2024-08-28 17:45:42,550 - INFO - -----------------------------------
+2024-08-28 17:45:42,550 - INFO - Checking stock for NL Shark
+2024-08-28 17:45:42,552 - INFO - Processing URLs...
+2024-08-28 17:45:54,417 - INFO - Updated 3 out-of-stock products for NL Shark
+2024-08-28 17:45:54,436 - INFO - Updated 17 in-stock products for NL Shark
+2024-08-28 17:45:54,458 - INFO - Price unchanged for ProductID 31. Current: 129.99
+2024-08-28 17:45:54,459 - INFO - Price unchanged for ProductID 32. Current: 249.99
+2024-08-28 17:45:54,459 - INFO - Price unchanged for ProductID 28. Current: 209.99
+2024-08-28 17:45:54,460 - INFO - Price unchanged for ProductID 29. Current: 365.99
+2024-08-28 17:45:54,461 - INFO - Price unchanged for ProductID 34. Current: 304.99
+2024-08-28 17:45:54,461 - INFO - Price unchanged for ProductID 30. Current: 187.99
+2024-08-28 17:45:54,462 - INFO - Price unchanged for ProductID 35. Current: 269.99
+2024-08-28 17:45:54,463 - INFO - Price unchanged for ProductID 36. Current: 329.99
+2024-08-28 17:45:54,463 - INFO - Price unchanged for ProductID 37. Current: 99.99
+2024-08-28 17:45:54,464 - INFO - Price unchanged for ProductID 38. Current: 79.99
+2024-08-28 17:45:54,465 - INFO - Price unchanged for ProductID 39. Current: 175.99
+2024-08-28 17:45:54,465 - INFO - Price unchanged for ProductID 40. Current: 175.99
+2024-08-28 17:45:54,466 - INFO - Price unchanged for ProductID 41. Current: 199.99
+2024-08-28 17:45:54,467 - INFO - Price unchanged for ProductID 42. Current: 379.99
+2024-08-28 17:45:54,467 - INFO - Price unchanged for ProductID 27. Current: 322.99
+2024-08-28 17:45:54,468 - INFO - Price unchanged for ProductID 43. Current: 129.99
+2024-08-28 17:45:54,468 - INFO - Price unchanged for ProductID 44. Current: 99.99
+2024-08-28 17:45:54,469 - INFO - Price unchanged for ProductID 45. Current: 119.99
+2024-08-28 17:45:54,470 - INFO - Price unchanged for ProductID 46. Current: 86.99
+2024-08-28 17:45:54,470 - INFO - Price unchanged for ProductID 47. Current: 148.99
+2024-08-28 17:45:54,471 - INFO - Saved product status and prices for 20 products for NL Shark
+2024-08-28 17:45:54,471 - INFO - No URLs were skipped in the end for NL Shark
+2024-08-28 17:45:54,471 - INFO - Finished checking NL Shark
+2024-08-28 17:45:54,471 - INFO - -----------------------------------
+2024-08-28 17:45:54,471 - INFO - Checking stock for BE Ninja
+2024-08-28 17:45:54,472 - INFO - Processing URLs...
+2024-08-28 17:46:01,079 - ERROR - Error fetching https://ninjakitchen.be/product/ninja-foodi-max-14-in-1-smartlid-multi-cooker-with-smart-cook-system-7-5l-ol750eu-zidOL750EU: HTTPSConnectionPool(host='ninjakitchen.be', port=443): Read timed out. (read timeout=3)
+2024-08-28 17:46:04,409 - ERROR - Error fetching https://ninjakitchen.be/product/ninja-woodfire-pro-xl-electric-bbq-grill-smoker-with-smart-cook-system-og850eu-zidOG850EU: HTTPSConnectionPool(host='ninjakitchen.be', port=443): Read timed out. (read timeout=3)
