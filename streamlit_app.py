@@ -1,58 +1,57 @@
 import streamlit as st
 from time import sleep
-from navigation import make_sidebar
-import sqlite3
+
+import mysql.connector
 from datetime import datetime
 
+# MySQL connection configuration
+db_config = {
+    'host': 'localhost',
+    'port': 2000,
+    'user': 'sharkninja_user',
+    'password': '3m3r4ld0',
+    'database': 'sharkninja_prd'
+}
+
+def get_db_connection():
+    return mysql.connector.connect(**db_config)
+
 def check_credentials(username, password):
-    conn = sqlite3.connect('Sharkninja.db')
+    conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM swaggers WHERE username = ? AND password = ?", (username, password))
+    cursor.execute("SELECT * FROM swaggers WHERE username = %s AND password = %s", (username, password))
     result = cursor.fetchone()
     
     # Log the login attempt
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     success = result is not None
-    cursor.execute("INSERT INTO login_logs (username, timestamp, success) VALUES (?, ?, ?)", (username, timestamp, success))
+    cursor.execute("INSERT INTO login_logs (username, timestamp, success) VALUES (%s, %s, %s)", (username, timestamp, success))
     conn.commit()
     
+    cursor.close()
     conn.close()
     return success
 
 def username_exists(username):
-    conn = sqlite3.connect('Sharkninja.db')
+    conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM swaggers WHERE username = ?", (username,))
+    cursor.execute("SELECT * FROM swaggers WHERE username = %s", (username,))
     result = cursor.fetchone()
+    cursor.close()
     conn.close()
     return result is not None
 
 def create_user(username, password):
-    conn = sqlite3.connect('Sharkninja.db')
+    conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("INSERT INTO swaggers (username, password) VALUES (?, ?)", (username, password))
+    cursor.execute("INSERT INTO swaggers (username, password) VALUES (%s, %s)", (username, password))
     conn.commit()
+    cursor.close()
     conn.close()
 
-# Add this function to create the login_logs table if it doesn't exist
-def create_login_logs_table():
-    conn = sqlite3.connect('Sharkninja.db')
-    cursor = conn.cursor()
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS login_logs (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT NOT NULL,
-        timestamp TEXT NOT NULL,
-        success BOOLEAN NOT NULL
-    )
-    """)
-    conn.commit()
-    conn.close()
-
-# Call this function at the beginning of your script
-create_login_logs_table()
-
-make_sidebar()
+# The login_logs table is already created in the MySQL database, so we don't need this function
+# def create_login_logs_table():
+#     ...
 
 st.title("Welcome")
 
